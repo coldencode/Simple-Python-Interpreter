@@ -116,3 +116,9 @@ while program[pc] != "HALT":
             pc = label_tracker[program[pc]]
         else:
             pc += 1
+    elif opcode == "PEEK":
+        print(stack.peek())
+    elif opcode == "MULTIPLY":
+        a = stack.pop()
+        b = stack.pop()
+        stack.push(a*b)

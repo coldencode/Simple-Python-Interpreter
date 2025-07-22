@@ -1,0 +1,10 @@
+READ
+READ
+ADD
+JUMP.GT.0 L1
+PRINT "not greater"
+HALT
+
+L1:
+PRINT "greater"
+HALT
